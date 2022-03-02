@@ -3,9 +3,6 @@ import { StyleSheet, Text, View, FlatList } from "react-native";
 import data from "./assets/test_data.json";
 
 export default function App() {
-  const renderList = ({ item }) => {
-    <Text style={styles.item}>{item.first_name}</Text>;
-  };
   return (
     <View style={styles.container}>
       <Text style={styles.text}>List Of Data</Text>
@@ -33,6 +30,7 @@ const styles = StyleSheet.create({
   container: {
     paddingLeft: 24,
     paddingTop: 24,
+    paddingRight: 24,
   },
   itemM: {
     backgroundColor: "rgb(12, 12, 128)",
